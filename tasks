@@ -1,0 +1,70 @@
+# programs
+string caps
+
+const addfun = (string) => {
+      var sen = string.toLowerCase().split(" ");
+      for(var i = 0; i< sen.length; i++){
+         sen[i] = sen[i][0].toUpperCase() + sen[i].slice(1);
+      }
+   console.log(sentence.join(" "));
+   return sentence;
+   }
+   addfun("guvi is one of best e-platforms");
+#2 sum of numbers
+
+const add = arr => arr.reduce((a, b) => a + b, 0);
+ 
+var arr = [3, 6, 1, 5, 8];
+var sum = add(arr);
+ 
+console.log(sum)
+
+
+#3 prime numbers
+
+const arr = [1, 3, 2, 5, 10,7,23,8,19,22];
+
+const primenum = arr.filter(num => {
+  for (let i = 2, s = Math.sqrt(num); i <= s; i++) {
+    if (num % i === 0) return false;
+  }
+  return num !== 1 && num !== 0;
+});
+
+console.log(primenum);
+
+#4 palindrome
+
+ 
+var words = ['foo', 'racecar', 'pineapple', 'porcupine', 'pineenip','121','1221'];
+
+
+var str = words.slice(0);
+var pal = str.toString().split("").reverse().join("").split(",");
+var  addfun = (arr) => {
+
+
+for (let i = 0; i < words.length; i++) {
+  for (let k = 0; k < pal.length; k++) {
+    if (words[i] == pal[k]) {
+      console.log(words[i]);
+    }
+  }
+}
+}
+
+addfun();
+
+#5 oddnum
+
+
+const arr = [1, 3, 2, 5, 10,7,23,8,19,22];
+
+const oddnum = arr.filter(num => {
+  for (let i = 0; i < arr.length; i++) {
+    if (num % 2 !== 0) return true;
+  }
+  return false;
+});
+
+console.log(oddnum);
