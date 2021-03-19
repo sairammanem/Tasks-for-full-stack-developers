@@ -1,0 +1,315 @@
+
+#1 string caps in arrow function
+
+const addfun = (string) => {
+      var sen = string.toLowerCase().split(" ");
+      for(var i = 0; i< sen.length; i++){
+         sen[i] = sen[i][0].toUpperCase() + sen[i].slice(1);
+      }
+   console.log(sentence.join(" "));
+   return sentence;
+   }
+   addfun("guvi is one of best e-platforms");
+
+#1 in anonymous
+const caps = function addfun(string) 
+{
+      var sen = string.toLowerCase().split(" ");
+      for(var i = 0; i< sen.length; i++){
+         sen[i] = sen[i][0].toUpperCase() + sen[i].slice(1);
+      }
+   console.log(sen.join(" "));
+   return sentence;
+   }
+   caps("guvi is one of best e-platforms");
+
+#In named function
+ 
+function addfun(string) 
+{
+      var sen = string.toLowerCase().split(" ");
+      for(var i = 0; i< sen.length; i++){
+         sen[i] = sen[i][0].toUpperCase() + sen[i].slice(1);
+      }
+   console.log(sen.join(" "));
+   return sentence;
+   }
+   addfun("guvi is one of best e-platforms");
+
+# iifi function
+
+(function addfun(string) 
+{
+      var sen = string.toLowerCase().split(" ");
+      for(var i = 0; i< sen.length; i++){
+         sen[i] = sen[i][0].toUpperCase() + sen[i].slice(1);
+      }
+   console.log(sen.join(" "));
+   return sentence;
+   })
+   ("guvi is one of best e-platforms");
+
+#2  Sum of numbers
+
+const add = arr => arr.reduce((a, b) => a + b, 0)
+var arr = [3, 6, 1, 5, 8];
+var sum = add(arr);
+ 
+console.log(sum)
+
+# anonymous
+
+ add = function(arr) {
+    return arr.reduce((a, b) => a + b, 0);
+};
+ 
+var arr = [3, 6, 1, 5, 8];
+ 
+var sum = add(arr);
+
+console.log(sum)
+
+# named function
+
+  function sai(arr) {
+    return arr.reduce((a, b) => a + b, 0);
+};
+ 
+var arr = [3, 6, 1, 5, 8];
+ 
+var sum = sai(arr);
+
+#iifi
+
+(function sai(arr) {
+    return arr.reduce((a, b) => a + b, 0);
+});(3, 6, 1, 5, 8);
+
+
+#3 prime numbers
+#iifi
+
+const arr = [1, 3, 2, 5, 10,7,23,8,19,22];
+
+ arr.filter(num => {
+  for (let i = 2, s = Math.sqrt(num); i <= s; i++) {
+    if (num % i === 0) return false;
+  }
+  return num !== 1 && num !== 0;
+});(arr);
+
+#Anonymous
+
+const arr = [1, 3, 2, 5, 10,7,23,8,19,22];
+
+const primenum = arr.filter(num => {
+  for (let i = 2, s = Math.sqrt(num); i <= s; i++) {
+    if (num % i === 0) return false;
+  }
+  return num !== 1 && num !== 0;
+});
+
+console.log(primenum);
+
+#4 palindrome
+
+ #anonymous
+var words = ['foo', 'racecar', 'pineapple', 'porcupine', 'pineenip','121','1221'];
+
+
+var str = words.slice(0);
+var pal = str.toString().split("").reverse().join("").split(",");
+var  addfun = (arr) => {
+
+
+for (let i = 0; i < words.length; i++) {
+  for (let k = 0; k < pal.length; k++) {
+    if (words[i] == pal[k]) {
+      console.log(words[i]);
+    }
+  }
+}
+}
+
+addfun();
+
+#iffi
+
+var words = ['foo', 'racecar', 'pineapple', 'porcupine', 'pineenip','121','1221'];
+
+
+var str = words.slice(0);
+var pal = str.toString().split("").reverse().join("").split(",");
+(var addfun = (arr) => {
+
+
+for (let i = 0; i < words.length; i++) {
+  for (let k = 0; k < pal.length; k++) {
+    if (words[i] == pal[k]) {
+      console.log(words[i]);
+    }
+  }
+}
+})addfun();
+
+
+#5 oddnum
+#anonymous
+
+const arr = [1, 3, 2, 5, 10,7,23,8,19,22];
+
+const oddnum = arr.filter(num => {
+  for (let i = 0; i < arr.length; i++) {
+    if (num % 2 !== 0) return true;
+  }
+  return false;
+});
+
+console.log(oddnum);
+
+#iifi
+
+const arr = [1, 3, 2, 5, 10,7,23,8,19,22];
+
+(const oddnum = arr.filter(num => {
+  for (let i = 0; i < arr.length; i++) {
+    if (num % 2 !== 0) return true;
+  }
+  return false;
+});)oddnum();
+
+#rotate by k
+
+#anonymous
+
+let rotate = function (n){
+ let arr = [1,2,3,4,5]
+let rotate = n;
+for(let i=0;i<rotate;i++){
+ temp = arr.shift();
+ arr.push(temp)
+}
+return arr;
+}
+console.log(rotate(3))
+
+#iifi
+
+ (function rotate(n) {
+ let arr = [1,2,3,4,5]
+ let rotate = n;
+for(let i=0;i<rotate;i++){
+ temp = arr.shift();
+ arr.push(temp)
+}
+return arr;
+})(rotate(3));
+
+# remove duplicates
+
+#anonymous
+
+let chars = ['A', 'B', 'A', 'C', 'B'];
+
+let uniqueChars = chars.filter((c, index) => {
+    return chars.indexOf(c) === index;
+});
+
+console.log(uniqueChars);
+
+#iifi
+
+let chars = ['A', 'B', 'A', 'C', 'B'];
+
+(function uniqueChars(ch) {
+ return ch.filter((c, index) => ch.indexOf(c) === index);
+})uniquechars(chars);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
