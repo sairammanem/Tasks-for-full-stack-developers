@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>resume</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .div1 {
+        position: relative;
+        background-color: rgb(104, 99, 99);
+        height: 180px;
+    }
+    
+    .div2 {
+        background-color: rgb(175, 168, 168);
+        position: absolute;
+        top: 100px;
+    }
+    
+    .div3 {
+        background-color: rgb(104, 99, 99);
+        height: 25px;
+        width: 100%;
+        position: absolute;
+        top: 200px;
+    }
+    
+    .name {
+        background-color: rgb(255, 184, 51);
+        bottom: 60px;
+        left: 25%;
+        position: absolute;
+        bottom: -30px;
+        color: black;
+        height: 40px;
+        width: 50%;
+        text-align: center;
+        font-size: x-large;
+        font-weight: bold;
+        border-radius: 4px;
+    }
+    
+    .img {
+        height: 120px;
+        width: 120px;
+        position: absolute;
+        left: 45%;
+        top: 70px;
+        border-radius: 50%;
+        border-style: dotted;
+        border-color: rgb(255, 184, 51);
+        border-width: 4px;
+    }
+    
+    .text {
+        position: absolute;
+        top: 230px;
+        left: 27%;
+    }
+    
+    .hr {
+        position: relative;
+        top: 140%;
+    }
+    
+    .vl {
+        border-left: 6px solid rgb(124, 128, 124);
+        height: 500px;
+        position: absolute;
+        left: 50%;
+        margin-left: -3px;
+        top: 253px;
+    }
+    
+    .div4 {
+        position: relative;
+        top: 265px;
+        left: 33px;
+        font-size: 20px;
+    }
+    
+    .p1 {
+        position: relative;
+        top: 280px;
+        left: 12px;
+        font-size: 18px;
+    }
+    
+    .div5 {
+        position: relative;
+        top: 310px;
+        left: 40px;
+        font-size: 20px;
+    }
+    
+    .div6 {
+        position: relative;
+        bottom: 98px;
+        left: 830px;
+        font-size: 20px;
+    }
+    
+    .p2 {
+        position: relative;
+        top: 320px;
+        left: 300px;
+        font-size: 18px;
+    }
+    
+    .p3 {
+        position: relative;
+        top: 330px;
+        left: 300px;
+        font-size: 18px;
+    }
+    
+    .slidecontainer {
+        position: relative;
+        left: 280px;
+        width: 50%;
+    }
+    
+    .slider {
+        position: relative;
+        top: 320px;
+        -webkit-appearance: none;
+        width: 50%;
+        height: 10px;
+        border-radius: 5px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+    
+    .slider:hover {
+        opacity: 1;
+    }
+    
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 13px;
+        height: 15px;
+        border-radius: 50%;
+        background: #4CAF50;
+        cursor: pointer;
+    }
+    
+    .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #4CAF50;
+        cursor: pointer;
+    }
+    
+    .p4 {
+        position: relative;
+        top: -120px;
+        left: 1100px;
+        font-size: 18px;
+    }
+    
+    .p5 {
+        position: relative;
+        top: -100px;
+        left: 800px;
+        font-size: 18px;
+    }
+    
+    .div7 {
+        position: relative;
+        bottom: 68px;
+        left: 840px;
+        font-size: 20px;
+    }
+    
+    .p6 {
+        position: relative;
+        top: -60px;
+        left: 839px;
+        font-size: 18px;
+    }
+    
+    .p7 {
+        position: relative;
+        top: -40px;
+        left: 800px;
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <div style="margin:10px">
+        <div class="div1">
+            <img src="IMG_20190628_085421.jpg" class="img">
+
+            <div class="div2">
+            </div>
+            <div class="div3">
+            </div>
+
+            <div class="name">SAIRAM SATYANARAYANA</div>
+            <p class="text">door no:- 60-8-20,p&t colony 2nd street rajahmundry-533105 | 999-999-9999 | sairammanem@gmail.com</p>
+            <hr class="hr">
+            <i class="fa fa-male fa-2x" style=" position: absolute; bottom: -120px;left: 10px;"></i>
+            <div class="vl"></div>
+
+            <div class="div4">profile</div>
+            <p class="p1">innovative optimised solution seeker. Exited to be at the deployement phase of my new carrer as a <br> web developer. i am ambitious, adventures, assidous,animated, and an literation advocate.</p>
+
+            <i class="fa fa-flask fa-2x" style=" position: absolute; bottom: -225px;left: 5px;"></i>
+            <div class="div5">Skills</div>
+            <p class="p2">Technical Skills</p>
+            <div class="slidecontainer">
+                <p style="position: relative; top:335px;right: 180px; font-size: 20px;">javascript</p>
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange"><br>
+                <p style="position: relative; top:335px;right: 180px; font-size: 20px;">HTML</p>
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange"><br>
+                <p style="position: relative; top:335px;right: 180px; font-size: 20px;">CSS</p>
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange"></div>
+            <p class="p3">
+                Additional Skills
+
+            </p>
+            <div class="slidecontainer">
+                <p style="position: relative; top:335px;right: 180px; font-size: 20px;">javascript</p>
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange"><br>
+                <p style="position: relative; top:335px;right: 180px; font-size: 20px;">HTML</p>
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange"><br>
+                <p style="position: relative; top:335px;right: 180px; font-size: 20px;">CSS</p>
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange"></div>
+
+            <i class="fas fa-box fa-2x" style=" position: absolute; bottom: -125px;left: 790px;"></i>
+            <div class="div6">Work Experience</div>
+            <p class="p4">Event manager 03/2014-02/2017</p><br>
+            <ul class="p5">
+                <li>lead and execute all phases of event planning and production spanning</li>
+                <li>brought new business to the organisation through relentless netwirking and stewardsip,which<br> helped the company to win the bid for the state.</li>
+                <li>Exercise fiscal control over budget creation tracking and report. collorate with employees at<br> all organisation levels to advance cohesive operations.</li>
+            </ul>
+            <i class="fas fa-graduation-cap fa-2x" style=" position: absolute; bottom: -320px;left: 785px;"></i>
+            <div class="div7">Education</div>
+            <p class="p6"><strong>Engineering in Electronics and communication</strong>&nbsp;&nbsp;&nbsp; 05/2016-05/2020</p>
+            <ul class="p7">
+                <li>
+                    Developed a Full stack web application "renew" using react that allows users to explore<br> various speeds of meditation.
+                </li>
+                <li>Developed a language learning app, "foodie phonetics" using spaced repetition and a linked<br> list data structure.</li>
+                <li>Developed a concierge app, "pley", for individuals looking for curated suggestions when<br> visiting a new place.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
